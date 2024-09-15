@@ -1,0 +1,67 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+* {
+    color: black;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+#famous-people {
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+[class*="subsection"] {
+    font-weight: bold;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+.nav-link.nav-link {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.tribute-image,
+.structure-img {
+    width: 200px;
+    height: 200px;
+}
+
+.main-intro p {
+    font-size: 18px;
+    color: darkgreen;
+}
+
+.image-container .geography-img {
+    width: 400px;
+    height: 300px;
+}
+
+.history * {
+    text-transform: capitalize;
+}
+
+.structure > p {
+    background-color: blanchedalmond;
+}
+
+.plant-list ~ p {
+    color: blueviolet;
+    background-color: beige;
+}
+
+.image-container + p {
+    color: red;
+}
