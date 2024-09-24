@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    line-height: 220%;
+
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: rgba(46, 7, 68, 0.813);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px #40378d;
+    letter-spacing: 5px;
+    line-height: 320%;
+}
+
+.nav-item {
+    line-height: 100%;
+    color: #2f006b;
+    padding: 0 0 10px 20px;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    letter-spacing: 2px;
+}
+
+.figma-first-container {
+    background-color: var(--Black-08, #141414);
+    padding-block: 120px;
+}
+
+.figma-first-model-title {
+    color: var(--Absolute-White, #FFF);
+    font-family: Manrope, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.figma-first-model,
+.figma-first-content {
+    max-height: 1920px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.figma-first-model p {
+    color: var(--Grey-60, #999);
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    margin-right: 300px;
+    max-width: 1297px;
+    margin-top: 14px;
+    margin-bottom: 80px;
+}
+
+.cards-img {
+    margin-bottom: 24px;
+    padding: 12px 20px;
+    vertical-align: middle;
+    border-radius: 12px;
+    border: 1px solid var(--Black-12, #1F1F1F);
+    background-color: var(--Black-08, #141414);
+}
+
+.cards-header {
+    margin-bottom: 24px;
+}
+
+.cards-items {
+    margin-inline: -5px;
+    font-size: 0;
+}
+
+.cards-item {
+    width: 33.333%;
+    display: inline-block;
+    color: var(--Grey-60, #999);
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    margin: 0 20px 20px 0;
+    padding: 35px;
+    max-width: 450px;
+    max-height: 230px;
+    border-radius: 12px;
+    border: 1px solid var(--Black-15, #262626);
+    background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
+    vertical-align: middle;
+}
+
+.cards-img,
+.cards-title {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.cards-title {
+    color: #FFF;
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12px;
+    margin-top: 14px;
+    max-height: 30px;
+}
+
+.cards-container {
+    height: auto;
+    width: 100%;
+}
+
+.cards-container p {
+    color: var(--Grey-60, #999);
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 333px;
+}
+
+.figma-second-model {
+    margin: 200px 0 0 163.12px;
+}
+
+.figma-second-model-title {
+    color: var(--Colour-Main-Blue-900, #091133);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 1px;
+    width: 539px;
+    height: 132px;
+    margin-bottom: 20px;
+}
+
+.figma-second-model p {
+    max-width: 539px;
+    max-height: 164px;
+    color: var(--Colour-Main-Blue-500, #505F98);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btn-container{
+    margin-top: 69px;
+}
+
+.btn {
+    background-color: #091133;
+    color: var(--colour-secondary-white-100-general, #FFF);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 189px;
+    border: 1px solid var(--Black-15, #262626);
+    width: 189px;
+    height: 26px;
+    margin-right: 30px;
+}
+
+.figma-third-model {
+    margin: 160px 0 165px 160px;
+}
+
+.third-model-title {
+    color: var(--Colour-Main-Blue-900, #091133);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    max-width: 520px;
+    max-height: 253px;
+    padding-bottom: 16px;
+}
+
+.figma-third-model-title p {
+    color: var(--Colour-Main-Blue-400, #6F7CB2);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px; 
+    max-width: 520px;
+    max-height: 253px;
+    justify-content: center;
+    padding-bottom: 1px;
+    margin-bottom: 71px;
+}
+
+.figma-third-model-content {
+    width: 520px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.third-content-items {
+    line-height: 35.2px;
+    box-sizing: border-box;
+    margin-inline: -35px -30px;
+    font-size: 0;
+}
+
+.third-content-item {
+    display: inline-block;
+    width: 43%;
+    box-sizing: border-box;
+    margin: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.third-img {
+    display: block;
+    max-width: 245px;
+    max-height: 36px;
+    padding-right: 209px;
+    align-items: left;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.third-content-item p {
+    font-size: 12px;
+    color: var(--Colour-Main-Grey-600, #5D6970);
+    margin-bottom: 32px;
+}
+
+.third-title {
+    color: var(--Colour-Main-Blue-900, #091133);  
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500; 
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.third-title,
+.third-content-item p {
+    width: 245px;
+    box-sizing: border-box;
+}
+
+.third-content-item p {
+    color: var(--Colour-Main-Grey-600, #5D6970);
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-content > p {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8d3786;
+    text-decoration: underline;
+    text-decoration-color: rgb(39, 7, 66);
+    line-height: 120%;
+    text-align: center;
+}
