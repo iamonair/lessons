@@ -1,0 +1,176 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.header-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ecd8ce;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #40378d;
+  letter-spacing: 5px;
+  line-height: 320%;
+}
+
+.main__block {
+  background: #fdf0e9;
+}
+
+.main__container {
+  margin: 0 auto;
+  line-height: 32px;
+  padding-block: 20px;
+}
+
+.main__content-section {
+  max-width: 650px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #ecd8ce;
+  padding: 30px 20px;
+  overflow: visible;
+}
+
+.main__subtitle {
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+  color:#40378d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.main__content-item {
+  display: block;
+}
+
+.main__content-item span {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.icon-back img, .icon img {
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.icon-back,
+.icon,
+.design {
+  white-space: nowrap;
+}
+
+.design span {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: 0;
+}
+
+.icon img,
+.design,
+.content-icon > * {
+  margin-bottom: 15px;
+}
+
+.icon, 
+.design,
+.content-icon > *:last-child {
+  margin-bottom: 0;
+}
+
+
+.design img {
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.main__content-content {
+  display: block;
+}
+
+.content-img img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.content-img span {
+  display: block;
+  margin-left: 0px;
+}
+
+.content-img img {
+  margin-top: 15px;
+}
+
+.icon-back {
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #EF6C57;
+  padding-left: 10px;
+  padding-top: 7px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.icon-back img {
+  height: 30px;
+  width: 30px;
+}
+
+.main__content-section div > p {
+  background: url(../img/quotes.png) left / 48px 36px no-repeat;
+}
+
+.icon-back:hover {
+  background-color: #ee371b;
+}
+
+.design img:hover {
+  transform: scale(1.1);
+}
+
+.content-icon img:hover {
+  transform: scale(1.1);
+}
+
+.main__subtitle:hover {
+  font-weight: 700;
+}
+
+
+
+.footer {
+    padding: 20px 0;
+}
+
+.footer-content > p {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8d3786;
+  text-decoration: underline;
+  text-decoration-color: #270742;
+  line-height: 120%;
+  text-align: center;
+}
