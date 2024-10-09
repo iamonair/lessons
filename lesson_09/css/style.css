@@ -1,0 +1,40 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main-bloc__title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ecd8ce;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #40378d;
+  letter-spacing: 5px;
+  line-height: 320%;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.footer__content > p {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8d3786;
+  text-decoration: underline;
+  text-decoration-color: #270742;
+  line-height: 120%;
+  text-align: center;
+}
