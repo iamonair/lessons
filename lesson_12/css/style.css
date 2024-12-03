@@ -1,0 +1,476 @@
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,600,800&display=swap");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: "Gilroy", sans-serif;
+  background-color: #5f6186;
+}
+
+.wrapper {
+  /* min-height: 100%; */
+  overflow: hidden;
+  margin: 0 auto;
+}
+.header-block__title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ecd8ce;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #40378d;
+  letter-spacing: 5px;
+  line-height: 320%;
+  text-transform: uppercase;
+}
+
+.transform-container>div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.transform-container {
+  padding-block: 40px;
+}
+
+
+.cloud,
+.cloud-grey {
+  height: 210px;
+  width: 280px;
+  position: absolute;
+  /* top: 50px; */
+  animation-name: clouds-move;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.cloud {
+  top: 30px;
+  left: 110px;
+  color: #ffffff;
+}
+
+.cloud-grey {
+  top: 70px;
+  left: 230px;
+}
+
+@keyframes clouds-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1800px);
+  }
+}
+
+.moon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(159deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6474964985994398) 100%);
+  position: absolute;
+  right: 90px;
+  top: 50px;
+  box-shadow: 0 0 200px 100px rgb(255, 255, 255);
+  animation-name: moon-move;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moon-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate( 10px, 10px);
+  }
+} */
+
+
+.car-block {
+  background: #28293E;
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+  padding: 20px;
+  margin-inline: auto;
+}
+
+.card {
+  display: inline-block;
+}
+
+.card__block {
+  position: relative;
+  perspective: 800px;
+}
+
+img {
+  width: 330px;
+  border-radius: 4%
+} 
+
+.card__front,
+.card__back {
+  transition: all 0.3s;
+}
+
+.card__front {
+  transform: rotateY(0deg);  
+}
+
+.card__back {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__block:hover .card__front {
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.card__block:hover .card__back {
+  transform: rotateY(0deg);
+  backface-visibility: visible;
+}
+
+.car-block__container {
+  background: url(../img/background.jpg) 0 0 / cover repeat-x;;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  height: 800px;
+  width: 100%;
+  animation-name: back-move;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  animation-delay: 6s;
+  animation-direction: alternate;
+}
+
+.car-block__details {
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  perspective: 300px;
+  perspective-origin: center;
+  width: 500px;
+  height: 600px;
+}
+
+.car-block__roof {
+  width: 200px;
+  height: 120px;
+  background-color: rgb(235, 33, 33);
+  border-radius: 50px 180px 0px 0px;
+  transform: translateY(20px);
+  border: 12px solid rgba(207, 24, 24, 0.5);
+}
+
+.car-block__body {
+  width: 188px;
+  height: 131px;
+  background-color: rgb(235, 33, 33);
+  position: relative;
+  top: 8px;
+  left: 9px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.car-block__roof::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 80px;
+  top: 19%;
+  right: 11%;
+  background: url("../img/grinch.jpg") top / 220px no-repeat;
+  /* background-color: rgba(94, 94, 94, 0.6); */
+  border-radius: 20px 70px 0 0;
+  border: 3px solid rgba(0, 0, 0, 0.253);
+}
+
+.car-block__window {
+  position: absolute;
+  width: 138px;
+  height: 80px;
+  background-color: rgb(135, 189, 214);
+  border-radius: 20px 70px 0 0;
+  transform: translateY(20px);
+  top: 5%;
+  right: 66.5%;
+  z-index: 1;
+  border: 3px solid rgba(0, 0, 0, 0.253);
+  animation-name: close-window;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes close-window {
+  0% {
+    transform: translateY(20px);
+    z-index: 1;
+  }
+  100% {
+    transform: translateY(85px);
+    z-index: 2;
+  }
+  
+}
+
+.car-block__hood {
+  width: 135px;
+  height: 55px;
+  background-color: rgb(235, 33, 33);
+  border-radius: 15% 70% 3% 8%;
+  position: absolute;
+  top: 22%;
+  right: 35%;
+  z-index: 3;
+  transform: translateX(-10px);
+  border: 12px solid rgba(207, 24, 24, 0.5);
+}
+
+.car-block__bumper-front {
+  width: 175px;
+  height: 85px;
+  background-color: rgb(235, 33, 33);
+  border-radius: 44% 20% 15% 13%;
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: 3;
+  transform: translateX(-10px);
+  border: 12px solid rgba(207, 24, 24, 0.5);
+}
+
+.car-block__light {
+  width: 10px;
+  height: 20px;
+  background-color: rgba(204, 17, 17, 0.726);
+  border-radius: 35% 35% 35% 35%;
+  position: absolute;
+  top: 33%;
+  right: 31.5%;
+  z-index: 4;
+}
+
+.car-block__headlight {
+  width: 6px;
+  height: 15px;
+  background-color: rgb(226, 222, 0);
+  border-radius: 35% 35% 35% 35%;
+  position: absolute;
+  top: 33.5%;
+  right: 31%;
+  z-index: 5;
+}
+
+.car-block__handle{
+  width: 25px;
+  height: 6px;
+  background-color: rgb(128, 150, 163);
+  border-radius: 35% 35% 35% 35%;
+  position: absolute;
+  top: 28%;
+  right: 90%;
+  z-index: 3;
+  border: 1px solid grey;
+}
+
+.car-block__trunk {
+  width: 300px;
+  height: 140px;
+  background-color: rgb(235, 33, 33);
+  border-radius: 5% 0% 5% 5%;
+  position: absolute;
+  top: 21%;
+  right: 96%;
+  transform: translateX(-10px);
+  border: 12px solid rgba(207, 24, 24, 0.5);
+}
+
+.car-block__bumper-back {
+  position: absolute;
+  top: 225px;
+  right: 480px;
+  transform: translate(-50%, -50%);
+  height: 90px;
+  width: 150px;
+  border-radius: 150px 150px 15px 15px;
+  background-color: rgb(235, 33, 33);
+  border: 12px solid rgba(207, 24, 24, 0.5);
+}
+
+.car-block__threshold {
+  width: 225px;
+  height: 10px;
+  background-color: rgb(56, 49, 49);
+  border-radius: 15% 15% 15% 15%;
+  position: absolute;
+  top: 43%;
+  right: 66%;
+  z-index: 3;
+  border: 2px solid rgb(71, 72, 73);
+}
+
+.wheels {
+  position: absolute;
+  z-index: 5;
+}
+
+.wheel {
+  width: 120px;
+  height: 120px; 
+  border-radius: 50%;
+  background-color: grey;
+  border: 5px dashed darkgrey;
+  position: relative;
+  animation-name: rotate-wheel;
+  animation-duration: 60s;
+  animation-timing-function: inear;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.wheel:first-child {
+  right: 191px;
+  bottom: 46px;
+ 
+}
+
+.wheel:last-child {
+  left: 205px;
+  bottom: 165px;
+}
+
+.wheel::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px dashed rgb(56, 49, 49);
+}
+
+@keyframes rotate-wheel {
+  0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.presents {
+  position: absolute;
+  top: 26%;
+  right: 48%;
+  transform: translateX(-10px);
+}
+
+
+.car-block::before {
+  content: "";
+  background: url("../img/background.jpg") center / 15px no-repeat;
+  display: inline-block;
+  
+}
+
+@keyframes car-move-jump {
+  0% {
+    transform: translate(0, 0); 
+  }
+  10% {
+    transform: translate(150px, -10px);
+  }
+  20% {
+    transform: translate(300px, 0);
+  }
+  30% {
+    transform: translate(450px, -10px);
+  }
+  40% {
+    transform: translate(600px, 0); 
+  }
+  50% {
+    transform: translate(750px, -10px);
+  }
+  60% {
+    transform: translate(900px, 0);
+  }
+  70% {
+    transform: translate(1050px, -10px);
+  }
+  80% {
+    transform: translate(1200px, 0);
+  }
+  90% {
+    transform: translate(1350px, -10px);
+  }
+  100% {
+    transform: translate(1500px, 0); 
+  }
+}
+
+.car-block__details,
+.presents {
+  animation-name: car-move-jump;
+  animation-duration: 60s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes back-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1500px 0;
+  }
+}
+
+
+
+.footer {
+    padding: 20px 0;
+}
+
+.footer__content > p {
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8d3786;
+  text-decoration: underline;
+  text-decoration-color: #270742;
+  line-height: 120%;
+  text-align: center;
+}
